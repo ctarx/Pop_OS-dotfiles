@@ -1,0 +1,82 @@
+#!/bin/sh
+
+#        _ _
+#   __ _| (_) __ _ ___ _ __ ___
+#  / _` | | |/ _` / __| '__/ __|
+# | (_| | | | (_| \__ \ | | (__
+#  \__,_|_|_|\__,_|___/_|  \___|
+#
+
+
+# UTILITY
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv"
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+alias less='less -R'
+alias ..='cd ../'
+alias ls='lsd'
+alias tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
+alias grep="grep --color=auto"
+
+# Use neovim for vim if present.
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+alias nvim-update="nvim +PlugUpgrade +PlugInstall +PlugUpdate +qa" # nvim update plugins
+
+# IP addresses
+alias extip='dig +short myip.opendns.com @resolver1.opendns.com' # Public IP address
+alias localip="ipconfig getifaddr en0"  # Local IP address
+
+# extract:  Extract most know archives with one command
+# ---------------------------------------------------------
+ext() {
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1 ;;
+      *.tar.gz)    tar xzf $1 ;;
+      *.bz2)       bunzip2 $1 ;;
+      *.rar)       unrar e $1 ;;
+      *.gz)        gunzip $1  ;;
+      *.tar)       tar xf $1  ;;
+      *.tbz2)      tar xjf $1 ;;
+      *.tgz)       tar xzf $1 ;;
+      *.zip)       unzip $1   ;;
+      *.Z)         uncompress $1  ;;
+      *.7z)        7z x $1        ;;
+      *)     echo "'$1' cannot be extracted via extract()" ;;
+      esac
+    else
+      echo "'$1' is not a valid file"
+    fi
+}
+
+alias ipinfo="curl ipinfo.io"
+alias weather="curl wttr.in"
+
+chsheet() {
+# Cheatsheets https://github.com/chubin/cheat.sh
+curl -L "https://cheat.sh/$1"
+}
+
+# GIT
+alias ga='git add'
+alias gd='git diff'
+alias gco='git checkout'
+alias gs='git status'
+alias gci='git commit'
+alias gl='git pull'
+alias gp='git push'
+alias gpp='git pull; git push'
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
