@@ -55,7 +55,7 @@ for f in ~/.config/shell_config/*; do source $f; done
 # nnn config
 export NNN_BMS='d:~/Documents;D:~/Downloads;P:~/Pictures'
 export NNN_COLORS="2136"                           # use a different color for each context
-export NNN_PLUG='f:finder;o:fzopen;d:diffs;t:nmount;v:imgview;p:preview-tui'
+export NNN_PLUG='f:finder;d:diffs;t:nmount;v:imgview;p:preview-tui'
 export NNN_FIFO='/tmp/nnn.fifo'
 
 if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
