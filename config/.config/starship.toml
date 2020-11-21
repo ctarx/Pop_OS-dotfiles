@@ -20,6 +20,8 @@ disabled = true
 style = "bold blue"
 truncation_length = 3
 truncation_symbol = "../"
+read_only_style = "red"
+read_only = " 牢"
 
 [character]
 success_symbol = "[](bold cyan) "

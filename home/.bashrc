@@ -53,8 +53,10 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 for f in ~/.config/shell_config/*; do source $f; done
 
 # nnn config
-export NNN_BMS='d:~/Documents;D:~/Downloads/'
+export NNN_BMS='d:~/Documents;D:~/Downloads;P:~/Pictures'
 export NNN_COLORS="2136"                           # use a different color for each context
+export NNN_PLUG='f:finder;o:fzopen;d:diffs;t:nmount;v:imgview;p:preview-tui'
+export NNN_FIFO='/tmp/nnn.fifo'
 
 if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
     source /usr/share/nnn/quitcd/quitcd.bash_zsh
