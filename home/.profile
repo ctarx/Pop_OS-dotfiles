@@ -26,8 +26,25 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Defaults
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
+export TERMCMD="alacritty"
 export BROWSER="brave"
+
+
+# nnn config
+export NNN_BMS='d:~/Documents;D:~/Downloads;P:~/Pictures'
+export NNN_COLORS="2136"                           # use a different color for each context
+export NNN_PLUG='f:finder;d:diffs;t:nmount;v:imgview;p:preview-tui'
+export NNN_FIFO='/tmp/nnn.fifo'
+export NNN_USE_EDITOR=1
+
+
+if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
+    source /usr/share/nnn/quitcd/quitcd.bash_zsh
+fi
+
+[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
