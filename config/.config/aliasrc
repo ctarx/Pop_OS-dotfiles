@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 #        _ _
 #   __ _| (_) __ _ ___ _ __ ___
@@ -13,24 +13,23 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
-	mkd="mkdir -pv"
+	mkdir="mkdir -pv"
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 alias less='less -R'
 alias ..='cd ../'
-alias ls='lsd'
+alias ls='lsd --group-dirs first'
+alias ll='lsd -lAh --blocks permission,group,size,date,name  --date relative --group-dirs first'
+alias l='lsd -lh --group-dirs first'
+
 alias tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
 alias grep="grep --color=auto"
 
 # Use neovim for vim if present.
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias nvim-update="nvim +PlugUpgrade +PlugInstall +PlugUpdate +qa" # nvim update plugins
-
-# IP addresses
-alias extip='dig +short myip.opendns.com @resolver1.opendns.com' # Public IP address
-alias localip="ipconfig getifaddr en0"  # Local IP address
 
 # extract:  Extract most know archives with one command
 # ---------------------------------------------------------
@@ -77,6 +76,9 @@ alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
+
+# System update
+alias sys-update='sudo apt update && sudo apt list --upgradable && sudo apt full-upgrade && sudo apt autoremove && flatpak update'
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
