@@ -1,0 +1,32 @@
+add_newline = true
+
+[line_break]
+disabled = true
+
+#[username]
+#style_user = "yellow bold"
+#style_root = "red bold"
+#format = "[$user]($style) "
+#disabled = false
+#show_always = true
+
+#[hostname]
+#ssh_only = false
+#format =  "at [$hostname](bold blue) "
+#trim_at = ".companyname.com"
+#disabled = false
+
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncation_symbol = "../"
+
+[character]
+success_symbol = "[](bold cyan) "
+error_symbol = "[✗](bold red) "
+
+[git_branch]
+style = "bold purple"
+symbol = " "
+truncation_length = 6
+truncation_symbol = ""
