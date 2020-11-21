@@ -15,7 +15,7 @@ alias \
   cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -a" \
   cac="cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -a" \
   cfb="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.bashrc}" \
-  cfa="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" \
+  cfa="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config/shell_config}/aliasrc" \
   cfz="$EDITOR $ZDOTDIR/.zshrc" \
   cfv="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim" \
   arko="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json" \
