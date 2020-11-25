@@ -48,10 +48,10 @@ call plug#end()
   set number relativenumber       " Show relative and actual line number
   set wrap linebreak nolist
   set colorcolumn=80
-  highlight ColorColumn ctermbg=Black
+  highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Softtaabs, 2 spaces
-  set tabstop=2
+  set tabstop=2 softtabstop=2
   set shiftwidth=2
   set shiftround
   set expandtab
