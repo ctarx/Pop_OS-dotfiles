@@ -1,5 +1,3 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
 # Import additional configuration files
 #
 # These configuration files will be loaded in order, replacing values in files
@@ -72,17 +70,17 @@ window:
   #startup_mode: Windowed
 
   # Window title
-  #title: Alacritty
+  title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
   #dynamic_title: true
 
   # Window class (Linux/BSD only):
-  #class:
+  class:
     # Application instance name
-    #instance: Alacritty
+    instance: Alacritty
     # General application class
-    #general: Alacritty
+    general: Alacritty
 
   # GTK theme variant (Linux/BSD only)
   #
@@ -93,7 +91,7 @@ window:
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 10000
+  history: 5000
 
   # Scrolling distance multiplier.
   multiplier: 3
@@ -226,8 +224,10 @@ colors:
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
   cursor:
-    text: CellBackground
-    cursor: CellForeground
+    text: '0xa89984'
+    cursor: '0xb16286'
+
+
 
   # Vi mode cursor colors
   #
@@ -246,8 +246,8 @@ colors:
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
   selection:
-    text: CellBackground
-    background: CellForeground
+    text: CellForeground
+    cursor: CellBackground
 
   # Search colors
   #
