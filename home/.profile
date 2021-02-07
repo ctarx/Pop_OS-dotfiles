@@ -28,10 +28,10 @@ fi
 
 # Defaults
 export EDITOR="nvim"
-export READER="zathura"
+export READER="evince"
 export VISUAL="nvim"
-export TERMINAL="alacritty"
-export TERMCMD="alacritty"
+export TERMINAL="gnome-terminal"
+export TERMCMD="gnome-terminal"
 export BROWSER="brave"
 
 
