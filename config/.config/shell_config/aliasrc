@@ -86,5 +86,8 @@ alias reload="exec ${SHELL} -l"
 # System update
 alias sys-update='sudo apt update && sudo apt list --upgradable && sudo apt full-upgrade && sudo apt autoremove && flatpak update'
 
+# Update python packages
+alias pip-upgrade="pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U"
+
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
