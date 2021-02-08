@@ -3,11 +3,12 @@
 > base configuration files
 
 ## Install
+
+I use GNU Stow [https://www.gnu.org/software/stow](https://www.gnu.org/software/stow)
 ```shell
 $ cd $HOME
 git clone https://github.com/ctarx/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
-Uses GNU Stow – [https://www.gnu.org/software/stow](https://www.gnu.org/software/stow)
 $ stow home && stow config
 ```
 
