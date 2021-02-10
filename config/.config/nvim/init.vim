@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ryanoasis/vim-devicons'
 
 " Better Visual Guide
-  Plug 'Yggdroot/indentLine'
+  Plug 'Yggdroot/indentLine'      " displaying thin vertical lines at each indentation level
   Plug 'ap/vim-css-color'         " Preview colors
 
 " syntax check
@@ -97,16 +97,6 @@ call plug#end()
   map <C-k> <C-w>k
   map <C-l> <C-w>l
 
-" no arrow keys (vi muscle memory)
-  noremap <up> :echoerr "Umm, use k instead"<CR>
-  noremap <down> :echoerr "Umm, use j instead"<CR>
-  noremap <left> :echoerr "Umm, use h instead"<CR>
-  noremap <right> :echoerr "Umm, use l instead"<CR>
-  inoremap <up> <NOP>
-  inoremap <down> <NOP>
-  inoremap <left> <NOP>
-  inoremap <right> <NOP>
-
 " Automatically deletes all trailing whitespace on save.
   autocmd BufWritePre * %s/\s\+$//e
   autocmd BufWritepre * %s/\n\+\%$//e
@@ -123,7 +113,7 @@ call plug#end()
 " vim-autoformat
   noremap <F3> :Autoformat<CR>
 
-" NERDCommenter
+" NERDCommenter CTRL+/
   nmap <C-_> <Plug>NERDCommenterToggle
   vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
@@ -132,19 +122,27 @@ call plug#end()
   autocmd FileType html,css EmmetInstall
   let g:user_emmet_leader_key=','
 
-" indentLine color
+" indentLine color and symbols
   let g:indentLine_color_term = 239
+  let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " NCM2
 augroup NCM2
   autocmd!
   " enable ncm2 for all buffers
   autocmd BufEnter * call ncm2#enable_for_buffer()
+
   " :help Ncm2PopupOpen for more information
+  set complete+=kspell      " look up into dictonary
   set completeopt=noinsert,menuone,noselect
+
   " When the <Enter> key is pressed while the popup menu is visible, it only
   " hides the menu. Use this mapping to close the menu and also start a new line.
   inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+
+  " Cancel the complete menu item like CTRL+e would
+  inoremap <expr> <Left> (pumvisible() ? "<C-e>" : "<Left>")
+
   " uncomment this block if you use vimtex for LaTex
   " autocmd Filetype tex call ncm2#register_source({
   "           \ 'name': 'vimtex',
