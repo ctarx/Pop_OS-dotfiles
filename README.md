@@ -11,6 +11,15 @@ git clone https://github.com/ctarx/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 $ stow home && stow config
 ```
+## Post Install
+> Neovim settings for python
+
+- python3
+- pip install neovim
+- jedi          (for code completion)
+- flake8        (for code linting)
+- autopep8      (for code formatting)
+
 
 #### Contact
 Created by [@ctarx](https://linuxrocks.online/@ctarx) - feel free to contact me!
