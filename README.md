@@ -20,6 +20,10 @@ $ stow home && stow config
 - flake8        (for code linting)
 - autopep8      (for code formatting)
 
+## Gruvbox colors in gnome-terminal
+
+I use [Gogh](https://github.com/Mayccoll/Gogh)
+brillant project with many themes including gruvbox
 
 #### Contact
 Created by [@ctarx](https://linuxrocks.online/@ctarx) - feel free to contact me!
