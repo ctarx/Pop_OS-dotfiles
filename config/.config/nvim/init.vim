@@ -6,6 +6,7 @@
 ""   \_/ |_|_| |_| |_|_|  \___|
 ""
 ""
+
 " Install vim-plug if not already installed
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -62,6 +63,8 @@ call plug#end()
   set scrolloff=5                 " scroll 5 lines
   set mouse=a
   set cursorline                  " Highlit cursor line
+  set guicursor=i:ver1            " enable vertical cursor when in insert mode
+  set guicursor=a:blinkon1        " enable cursor blinking
   set number relativenumber       " Show relative and actual line number
   set wrap linebreak nolist
   set colorcolumn=80
