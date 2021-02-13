@@ -1,12 +1,11 @@
 ""
-""        _
-"" __   _(_)_ __ ___  _ __ ___
-"" \ \ / / | '_ ` _ \| '__/ __|
-""  \ V /| | | | | | | | | (__
-""   \_/ |_|_| |_| |_|_|  \___|
+""  _       _ _         _
+"" (_)_ __ (_) |___   _(_)_ __ ___
+"" | | '_ \| | __\ \ / / | '_ ` _ \
+"" | | | | | | |_ \ V /| | | | | | |
+"" |_|_| |_|_|\__(_)_/ |_|_| |_| |_|
 ""
 ""
-
 " Install vim-plug if not already installed
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -43,8 +42,10 @@ call plug#begin('~/.config/nvim/plugged')
 
 call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if &compatible
-    "set nocompatible               " Be iMproved
+    set nocompatible               " Be iMproved
 endif
 
   syntax enable
@@ -59,6 +60,7 @@ endif
   set encoding=utf-8              " Set default encoding to UTF-8
   set autoread                    " Automatically reread changed files without asking anything
   set autoindent                  " Automatically indent new lines
+  set smartindent
   set backspace=indent,eol,start  " Makes backspace key more powerful.
   set incsearch                   " Shows the match while typing
   set hlsearch                    " Highlight found searches
@@ -70,24 +72,43 @@ endif
   set number relativenumber       " Show relative and actual line number
   set wrap linebreak nolist
   set colorcolumn=80
-  highlight ColorColumn ctermbg=0 guibg=lightgrey
+  highlight Normal guibg=none
   set pumheight=10                " Makes popup menu smaller
 
 " Tab and Indent configuration
-  set tabstop=2                   " Insert 2 spaces for a tab
-  set softtabstop=2
-  set shiftwidth=2
+  set tabstop=2 softtabstop=4     " Insert 2 spaces for a tab
+  set shiftwidth=4
   set smarttab                    " Makes tabbing smarter will realize you have 2 vs 4
   set expandtab                   " Converts tabs to spaces
+
+  autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+  autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+  autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " more risky but cleaner
   set nobackup
   set noswapfile
   set nowritebackup
 
+  set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup
+
+" Better display for messages
+  set cmdheight=2
+
+" You will have bad experience for diagnostic messages when it's default 4000.
+  set updatetime=50
+
+" don't give |ins-completion-menu| messages.
+  set shortmess+=c
+
+" always show signcolumns
+  set signcolumn=yes
 
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
   set splitbelow splitright
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NERDTree
   let NERDTreeQuitOnOpen=1
@@ -147,19 +168,6 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-pyright'
   \ ]
-
-" from readme
-" if hidden is not set, TextEdit might fail.
-set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup
-" Better display for messages set cmdheight=2
-" You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
-
-" don't give |ins-completion-menu| messages.
-set shortmess+=c
-
-" always show signcolumns
-set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
