@@ -126,6 +126,20 @@ endif
   map <C-k> <C-w>k
   map <C-l> <C-w>l
 
+" Tabs shortcuts navigation
+  nnoremap <C-Left> :tabprevious<CR>
+  nnoremap <C-Right> :tabnext<CR>
+  nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+  nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+
+" Mappings to move lines
+  nnoremap <A-j> :m .+1<CR>==
+  nnoremap <A-k> :m .-2<CR>==
+  inoremap <A-j> <Esc>:m .+1<CR>==gi
+  inoremap <A-k> <Esc>:m .-2<CR>==gi
+  vnoremap <A-j> :m '>+1<CR>gv=gv
+  vnoremap <A-k> :m '<-2<CR>gv=gv
+
 " Automatically deletes all trailing whitespace on save.
   autocmd BufWritePre * %s/\s\+$//e
   autocmd BufWritepre * %s/\n\+\%$//e
