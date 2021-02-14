@@ -20,9 +20,11 @@ call plug#begin('~/.config/nvim/plugged')
 " UI related
   Plug 'morhetz/gruvbox'
   Plug 'itchyny/lightline.vim'
+  Plug 'mengelbrecht/lightline-bufferline'
   Plug 'scrooloose/nerdtree'
   Plug 'ryanoasis/vim-devicons'
   Plug 'mhinz/vim-startify'
+  Plug 'ctrlpvim/ctrlp.vim'
 
 " Better Visual Guide
   Plug 'Yggdroot/indentLine'      " displaying thin vertical lines at each indentation level
@@ -57,6 +59,7 @@ endif
   set noshowmode                  " because I use a lightline
   set clipboard=unnamedplus       " Clipboard integration
   set laststatus=2                " Always show status line
+  set showtabline=2               " buffers in tabline lightline-bufferline
   set encoding=utf-8              " Set default encoding to UTF-8
   set autoread                    " Automatically reread changed files without asking anything
   set autoindent                  " Automatically indent new lines
@@ -125,6 +128,11 @@ endif
   map <C-j> <C-w>j
   map <C-k> <C-w>k
   map <C-l> <C-w>l
+
+" TAB in general mode will move to text buffer
+  nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+  nnoremap <S-TAB> :bprevious<CR>
 
 " Tabs shortcuts navigation
   nnoremap <C-Left> :tabprevious<CR>
@@ -234,3 +242,13 @@ nmap <F2> <Plug>(coc-rename)
 
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" lightline abd buffers
+let g:lightline#bufferline#show_number  = 1
+let g:lightline#bufferline#shorten_path = 0
+let g:lightline#bufferline#unnamed      = '[No Name]'
+
+let g:lightline                  = {'colorscheme': 'gruvbox'}
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
