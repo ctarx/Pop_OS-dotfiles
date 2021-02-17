@@ -54,8 +54,16 @@ endif
   nnoremap <SPACE> <Nop>
   let mapleader = " "             " Use SPACE as leader
   filetype plugin indent on       " Alow sensing the filetype
-  set background=dark             " Use dark background
+
   colorscheme gruvbox             " gruvbox colorscheme
+  let g:gruvbox_contrast_dark = 'hard'
+  if exists('+termguicolors')
+      let &t_8f = "\<Esc>[38;2;%lu;%lum]"
+      let &t_8b = "<Esc>[48;2;%lu;%lu;%lum]"
+  endif
+  let g:gruvbox_invert_selection='0'
+  set background=dark             " Use dark background
+
   set noshowmode                  " because I use a lightline
   set clipboard=unnamedplus       " Clipboard integration
   set laststatus=2                " Always show status line
