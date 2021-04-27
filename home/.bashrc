@@ -19,6 +19,10 @@ esac
 # Activate vi mode with <Esc>
 set -o vi
 
+# Completion and listing
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
