@@ -48,3 +48,4 @@ if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
 fi
 
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
+source "$HOME/.cargo/env"
