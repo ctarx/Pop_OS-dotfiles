@@ -16,9 +16,6 @@ $ stow home && stow config
 
 - python3
 - pip install neovim
-~~- jedi          (for code completion)~~
-- flake8        (for code linting)
-- autopep8      (for code formatting)
 
 ## Gruvbox colors in gnome-terminal
 
