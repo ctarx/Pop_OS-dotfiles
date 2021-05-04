@@ -42,6 +42,10 @@ call plug#begin('~/.config/nvim/plugged')
 
   Plug 'sheerun/vim-polyglot'
 
+" Pandoc
+  Plug 'vim-pandoc/vim-pandoc'
+  Plug 'rwxrob/vim-pandoc-syntax-simple'
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
