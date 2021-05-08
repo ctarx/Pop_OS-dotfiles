@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 #        _ _
 #   __ _| (_) __ _ ___ _ __ ___
@@ -21,13 +21,15 @@ alias pbpaste='xclip -selection clipboard -o'
 alias open="xdg-open"
 
 alias less='less -R'
+alias '?'=duck
 alias ..='cd ../'
 alias ls='lsd --group-dirs first'
 alias ll='lsd -lAh --blocks permission,group,size,date,name  --date relative --group-dirs first'
 alias l='lsd -lh --group-dirs first'
 
-alias tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
-alias grep="grep --color=auto"
+alias tmux='tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf'
+alias grep='grep -i --color=auto'
+alias curl='curl -L'
 
 # Use neovim for vim if present.
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
@@ -40,6 +42,7 @@ ext() {
     case $1 in
       *.tar.bz2)   tar xjf $1 ;;
       *.tar.gz)    tar xzf $1 ;;
+      *.tar.xz)    tar xJf $1 ;;
       *.bz2)       bunzip2 $1 ;;
       *.rar)       unrar e $1 ;;
       *.gz)        gunzip $1  ;;
