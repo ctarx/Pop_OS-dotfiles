@@ -1,7 +1,7 @@
 add_newline = true
 
 [line_break]
-disabled = true
+disabled = false
 
 [directory]
 style = "bold blue"
@@ -11,7 +11,7 @@ read_only_style = "red"
 read_only = " 牢"
 
 [character]
-success_symbol = "[❯](bold cyan) "
+success_symbol = "[➜](bold cyan) "
 error_symbol = "[✗](bold red) "
 
 [git_branch]
