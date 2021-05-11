@@ -100,6 +100,9 @@ endif
   autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
   autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
+" mark trailing spaces as errors
+  match ErrorMsg '\s\+$'
+
 " more risky but cleaner
   set nobackup
   set noswapfile

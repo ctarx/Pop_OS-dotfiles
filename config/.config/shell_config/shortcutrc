@@ -2,18 +2,18 @@
 
 # Shortcuts
 alias \
-  h="cd ~/ && ls -a" \
-  d="cd ~/Documents && ls -a" \
-  D="cd ~/Downloads && ls -a" \
-  m="cd ~/Music && ls -a" \
-  pp="cd ~/Pictures && ls -a" \
-  vv="cd ~/Videos && ls -a" \
-  dev="cd ~/Projects && ls -a" \
-  edu="cd ~/Projects/web-education && ls -a" \
-  dt="cd ~/.dotfiles && ls -a" \
-  ark="cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -a" \
-  cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -a" \
-  cac="cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -a" \
+  h="cd ~/ && ls -A" \
+  d="cd ~/Documents && ls -A" \
+  D="cd ~/Downloads && ls -A" \
+  m="cd ~/Music && ls -A" \
+  pp="cd ~/Pictures && ls -A" \
+  vv="cd ~/Videos && ls -A" \
+  dev="cd ~/Projects && ls -A" \
+  edu="cd ~/Projects/web-education && ls -A" \
+  dt="cd ~/.dotfiles && ls -A" \
+  ark="cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A" \
+  cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A" \
+  cac="cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -A" \
   cfb="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.bashrc}" \
   cfa="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config/shell_config}/aliasrc" \
   cfz="$EDITOR $ZDOTDIR/.zshrc" \
