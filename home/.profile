@@ -37,7 +37,7 @@ export BROWSER="brave"
 
 # nnn config
 export NNN_BMS='d:~/Documents;D:~/Downloads;P:~/Pictures'
-export NNN_COLORS="2136"                           # use a different color for each context
+export NNN_COLORS="2136"     # use a different color for each context
 export NNN_PLUG='f:finder;d:diffs;t:nmount;v:imgview;p:preview-tui'
 export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_USE_EDITOR=1
