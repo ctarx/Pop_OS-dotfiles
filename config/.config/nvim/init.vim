@@ -60,13 +60,9 @@ endif
   filetype plugin indent on       " Alow sensing the filetype
 
   colorscheme gruvbox             " gruvbox colorscheme
-  "let g:gruvbox_contrast_dark = 'hard'
-  "if exists('+termguicolors')
-      "let &t_8f = "\<Esc>[38;2;%lu;%lum]"
-      "let &t_8b = "<Esc>[48;2;%lu;%lu;%lum]"
-  "endif
-  "let g:gruvbox_invert_selection='0'
-  "set background=dark             " Use dark background
+  let g:gruvbox_contrast_dark = 'hard'
+  let g:gruvbox_invert_selection='0'
+  set background=dark             " Use dark background
 
   set noshowmode                  " because I use a lightline
   set clipboard=unnamedplus       " Clipboard integration
@@ -87,7 +83,8 @@ endif
   set number relativenumber       " Show relative and actual line number
   set wrap linebreak nolist
   set colorcolumn=80
-  highlight Normal guibg=none
+  hi Normal ctermbg=NONE          " for transparent background
+  "hi Normal guibg=NONE
   set pumheight=10                " Makes popup menu smaller
 
 " Tab and Indent configuration
