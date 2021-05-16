@@ -23,12 +23,12 @@ truncation_symbol = ""
 # shows the hostname on new lines
 [hostname]
 ssh_only = false
-format = "[$hostname]($style) in "
+format = "[$hostname]($style): "
 style = "bold blue"
 
 [username]
 style_user = "bold yellow"
 style_root = "bold green"
-format = "[$user]($style) on "
+format = "[$user]($style)@"
 disabled = false
 show_always = true

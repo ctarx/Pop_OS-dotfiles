@@ -3,7 +3,7 @@
 unalias -a
 
 
-# UTILITY
+# Utilities
 alias \
     cp='cp -iv' \
     mv='mv -iv' \
@@ -27,6 +27,10 @@ alias \
 alias tmux='tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf'
 alias grep='grep -i --color=auto'
 alias curl='curl -L'
+
+alias free='free -h'
+alias df='df -h'
+alias top="htop"
 
 # Use neovim for vim if present.
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
