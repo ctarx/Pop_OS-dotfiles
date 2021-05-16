@@ -9,7 +9,7 @@ I use GNU Stow [https://www.gnu.org/software/stow](https://www.gnu.org/software/
 $ cd $HOME
 $ git clone https://github.com/ctarx/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
-$ stow home && stow config
+$ stow home && stow config && stow local
 ```
 ## Post Install
 > Neovim settings for python
