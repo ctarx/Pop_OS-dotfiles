@@ -13,11 +13,13 @@ alias \
   dev="cd ~/Projects && ls -A" \
   edu="cd ~/Projects/web-education && ls -A" \
   dt="cd ~/.dotfiles && ls -A" \
+  zt="cs ~/Documents/Technology/Notes/zet && ls -A" \
   ark="cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A" \
   cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A" \
   cac="cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -A" \
   cfb="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.bashrc}" \
   cfa="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config/shell_config}/aliases.sh" \
+  cfs="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config/shell_config}/shortcuts.sh" \
   cfz="$EDITOR $ZDOTDIR/.zshrc" \
   cfv="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim" \
   arko="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json" \

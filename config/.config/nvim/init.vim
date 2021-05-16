@@ -268,5 +268,5 @@ let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " pandoc
-let g:pandoc#syntax#conceal#use=0 "disable conceal feature
+"let g:pandoc#syntax#conceal#use=0 "disable conceal feature
 let g:pandoc#modules#disabled = [ "spell" ] " disable spell check
