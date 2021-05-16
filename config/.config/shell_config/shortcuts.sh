@@ -13,7 +13,7 @@ alias \
   dev="cd ~/Projects && ls -A" \
   edu="cd ~/Projects/web-education && ls -A" \
   dt="cd ~/.dotfiles && ls -A" \
-  zt="cs ~/Documents/Technology/Notes/zet && ls -A" \
+  zt="cd ~/Documents/Technology/Notes/zet && ls -A" \
   ark="cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A" \
   cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A" \
   cac="cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -A" \
