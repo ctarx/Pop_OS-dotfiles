@@ -46,6 +46,15 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# Here's your colored man pages right here.
+export LESS_TERMCAP_mb=$magenta
+export LESS_TERMCAP_md=$yellow
+export LESS_TERMCAP_me=$reset
+export LESS_TERMCAP_se=$reset
+export LESS_TERMCAP_so=$blue
+export LESS_TERMCAP_ue=$reset
+export LESS_TERMCAP_us="^[[4m"
+
 # Prompt
     #PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 

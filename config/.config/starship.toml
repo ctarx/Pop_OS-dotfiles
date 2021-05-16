@@ -19,3 +19,16 @@ style = "bold purple"
 symbol = " "
 truncation_length = 6
 truncation_symbol = ""
+
+# shows the hostname on new lines
+[hostname]
+ssh_only = false
+format = "[$hostname]($style) in "
+style = "bold blue"
+
+[username]
+style_user = "bold yellow"
+style_root = "bold green"
+format = "[$user]($style) on "
+disabled = false
+show_always = true
