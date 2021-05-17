@@ -83,8 +83,13 @@ endif
   set number relativenumber       " Show relative and actual line number
   set wrap linebreak nolist
   set colorcolumn=80
+
   hi Normal ctermbg=NONE          " for transparent background
-  "hi Normal guibg=NONE
+  highlight NonText guifg=bg
+  au FileType pandoc hi pandocAtxHeader ctermfg=yellow cterm=bold
+  au FileType pandoc hi pandocAtxStart ctermfg=yellow cterm=bold
+  au FileType pandoc hi pandocAtxHeaderMark ctermfg=yellow cterm=bold
+
   set pumheight=10                " Makes popup menu smaller
 
 " Tab and Indent configuration
@@ -93,9 +98,7 @@ endif
   set smarttab                    " Makes tabbing smarter will realize you have 2 vs 4
   set expandtab                   " Converts tabs to spaces
 
-  autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+  autocmd FileType html,css,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " mark trailing spaces as errors
   match ErrorMsg '\s\+$'
@@ -187,6 +190,7 @@ endif
 " indentLine color and symbols
   let g:indentLine_color_term = 239
   let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+  au FileType markdown,pandoc let g:indentLine_setConceal= 0  "conflict with pandoc plugin
 
 " tagalong
 let g:tagalong_verbose = 1
@@ -268,5 +272,5 @@ let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " pandoc
-"let g:pandoc#syntax#conceal#use=0 "disable conceal feature
-let g:pandoc#modules#disabled = [ "spell" ] " disable spell check
+let g:pandoc#modules#disabled = ["folding", "spell"] "disable spell and folding
+let g:pandoc#formatting#mode = 'h' " A'
