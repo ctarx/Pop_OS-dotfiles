@@ -52,6 +52,9 @@ eval "$(starship init bash)"  # starship prompt
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+# make Caps Lock an additional Esc
+test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
+
 # Shell config source
 for f in ~/.config/shell_config/*; do source $f; done
 
