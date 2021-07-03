@@ -11,7 +11,6 @@ alias \
   pp="cd ~/Pictures && ls -A" \
   vv="cd ~/Videos && ls -A" \
   dev="cd ~/Projects && ls -A" \
-  edu="cd ~/Projects/web-education && ls -A" \
   dt="cd ~/.dotfiles && ls -A" \
   zt="cd ~/Documents/Technology/Notes/zet && ls -A" \
   ark="cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A" \
