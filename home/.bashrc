@@ -1,12 +1,11 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 #   _               _
 #  | |__   __ _ ___| |__  _ __ ___
 #  | '_ \ / _` / __| '_ \| '__/ __|
 #  | |_) | (_| \__ \ | | | | | (__
 #  |_.__/ \__,_|___/_| |_|_|  \___|
 #
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+
+# shellcheck shell=bash
 
 # If not running interactively, don't do anything
 case $- in
@@ -56,7 +55,8 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
 
 # Shell config source
-for f in ~/.config/shell_config/*; do source $f; done
+# shellcheck source=~/.config/shell_config/
+for f in ~/.config/shell_config/*; do source "$f"; done
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

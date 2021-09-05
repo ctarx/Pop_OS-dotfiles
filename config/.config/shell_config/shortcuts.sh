@@ -16,7 +16,7 @@ alias \
   ark="cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A" \
   cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A" \
   cac="cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -A" \
-  cfb="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.bashrc}" \
+  cfb="$EDITOR $HOME/.bashrc" \
   cfa="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shell_config/aliases.sh" \
   cfs="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shell_config/shortcuts.sh" \
   cfz="$EDITOR $ZDOTDIR/.zshrc" \
