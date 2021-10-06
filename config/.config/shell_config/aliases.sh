@@ -31,6 +31,7 @@ alias curl='curl -L'
 alias free='free -h'
 alias df='df -h'
 alias top="htop"
+alias lsmount='mount |column -t'
 
 # Use neovim for vim if present.
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
