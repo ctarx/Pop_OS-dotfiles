@@ -22,3 +22,4 @@ alias \
   cfz="$EDITOR $ZDOTDIR/.zshrc" \
   cfv="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim" \
   arko="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json" \
+  cfn="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config" \
