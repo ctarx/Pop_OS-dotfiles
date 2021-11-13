@@ -40,7 +40,7 @@ export READER="evince"
 export VISUAL="nvim"
 export TERMINAL="gnome-terminal"
 export TERMCMD="gnome-terminal"
-export BROWSER="brave"
+export BROWSER="brave-browser"
 
 
 # nnn config
