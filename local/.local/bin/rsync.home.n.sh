@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rsync -avxPn --exclude-from=/home/ctarx/rsync_ignore --delete /home/$USER/ /media/ctarx/Backup/hell/
+rsync -avxPn --exclude-from=/home/ctarx/rsync_ignore --delete /home/ctarx/ /media/ctarx/Backup/hell/
 
 # Options:
 #
