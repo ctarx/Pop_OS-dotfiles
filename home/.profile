@@ -11,7 +11,9 @@
 # shellcheck shell=bash
 
 # use F13 as PrintScr
-setxkbmap -option "apple:alupckeys"
+test -n "$DISPLAY" && setxkbmap -option apple:alupckeys &>/dev/null
+# make Caps Lock an additional Esc
+test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
