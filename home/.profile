@@ -10,6 +10,9 @@
 
 # shellcheck shell=bash
 
+# use F13 as PrintScr
+setxkbmap -option "apple:alupckeys"
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
