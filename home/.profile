@@ -43,8 +43,7 @@ export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 export EDITOR="nvim"
 export READER="evince"
 export VISUAL="nvim"
-export TERMINAL="gnome-terminal"
-export TERMCMD="gnome-terminal"
+export TERM="xterm-256color"
 export BROWSER="brave-browser"
 
 
