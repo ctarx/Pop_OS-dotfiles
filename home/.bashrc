@@ -18,6 +18,7 @@ set -o vi
 
 # Completion and listing
 bind 'set show-all-if-ambiguous on'
+bind 'set completion-ignore-case on'
 bind 'TAB:menu-complete'
 
 # don't put duplicate lines or lines starting with space in the history.
