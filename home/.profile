@@ -10,8 +10,6 @@
 
 # shellcheck shell=bash
 
-# use F13 as PrintScr
-test -n "$DISPLAY" && setxkbmap -option apple:alupckeys &>/dev/null
 # make Caps Lock an additional Esc
 test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
 
