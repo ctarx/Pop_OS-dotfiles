@@ -8,7 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# shellcheck shell=bash
 
 # make Caps Lock an additional Esc
 test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null

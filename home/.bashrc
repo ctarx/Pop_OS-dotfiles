@@ -5,7 +5,6 @@
 #  |_.__/ \__,_|___/_| |_|_|  \___|
 #
 
-# shellcheck shell=bash
 
 # If not running interactively, don't do anything
 case $- in
