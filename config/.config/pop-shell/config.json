@@ -1,0 +1,147 @@
+{
+  "float": [
+    {
+      "class": "pop-shell-example",
+      "title": "pop-shell-example"
+    },
+    {
+      "class": "Io.elementary.appcenter"
+    },
+    {
+      "class": "Steam"
+    },
+    {
+      "class": "battle.net.exe"
+    },
+    {
+      "class": "Lutris"
+    },
+    {
+      "class": "electrum"
+    },
+    {
+      "class": "Gnome-calculator"
+    },
+    {
+      "class": "wow.exe"
+    },
+    {
+      "class": "path of building.exe",
+      "title": "Path of Building"
+    },
+    {
+      "class": "VirtualBox Manager"
+    },
+    {
+      "class": "csgo_linux64"
+    },
+    {
+      "class": "Gnome-tweaks"
+    },
+    {
+      "class": "torbrowser-launcher"
+    },
+    {
+      "class": "Tor Browser"
+    },
+    {
+      "class": "Geary"
+    },
+    {
+      "class": "Gnome-control-center"
+    },
+    {
+      "class": "Org.gnome.Nautilus",
+      "title": "Rubbish Bin"
+    },
+    {
+      "class": "Gnome-font-viewer"
+    },
+    {
+      "class": "battle.net.exe",
+      "title": "Blizzard Battle.net"
+    },
+    {
+      "class": "Lollypop"
+    },
+    {
+      "class": "explorer.exe",
+      "title": "Wine System Tray"
+    },
+    {
+      "class": "Popsicle"
+    },
+    {
+      "class": "WowUp"
+    },
+    {
+      "class": "Kodi"
+    },
+    {
+      "class": "Gnome-extensions-app"
+    },
+    {
+      "class": "Repoman"
+    },
+    {
+      "class": "mpv"
+    },
+    {
+      "class": "BleachBit"
+    },
+    {
+      "class": "Gnome-disks"
+    },
+    {
+      "class": "Skype"
+    },
+    {
+      "class": "VirtualBox Machine"
+    },
+    {
+      "class": "path of building.exe"
+    },
+    {
+      "class": "Exodus"
+    },
+    {
+      "class": "Popsicle-gtk"
+    },
+    {
+      "class": "Bitwarden"
+    },
+    {
+      "class": "Mudlet"
+    },
+    {
+      "class": "Gnome-contacts"
+    },
+    {
+      "class": "riotclientux.exe"
+    },
+    {
+      "class": "explorer.exe"
+    },
+    {
+      "class": "leagueclientux.exe"
+    },
+    {
+      "class": "Imager"
+    },
+    {
+      "class": "Virt-manager"
+    },
+    {
+      "class": "nuclear"
+    },
+    {
+      "class": "awakened-poe-trade",
+      "title": "Awakened PoE Trade"
+    },
+    {
+      "class": "YKPersonalization"
+    }
+  ],
+  "skiptaskbarhidden": [],
+  "log_on_focus": false
+}
