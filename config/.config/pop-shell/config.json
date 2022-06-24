@@ -96,7 +96,7 @@
       "class": "Skype"
     },
     {
-      "class": "VirtualBox Machine"
+      "class": "YKPersonalization"
     },
     {
       "class": "path of building.exe"
@@ -111,7 +111,7 @@
       "class": "Bitwarden"
     },
     {
-      "class": "Mudlet"
+      "class": "Kazam"
     },
     {
       "class": "Gnome-contacts"
@@ -129,16 +129,11 @@
       "class": "Imager"
     },
     {
-      "class": "Virt-manager"
-    },
-    {
       "class": "nuclear"
     },
     {
-      "class": "YKPersonalization"
-    },
-    {
-      "class": "Kazam"
+      "class": "Mudlet",
+      "title": "Arkadia - Editor"
     }
   ],
   "skiptaskbarhidden": [],
