@@ -26,7 +26,7 @@ alias \
 
 alias tmux='tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf'
 alias grep='grep -i --color=auto'
-alias ip='ip --color auto'
+alias ip='ip --color=auto'
 alias curl='curl -L'
 
 alias free='free -h'
