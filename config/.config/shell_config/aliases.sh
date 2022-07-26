@@ -96,6 +96,8 @@ alias reload='exec ${SHELL} -l'
 # System update
 alias sys-updt='sudo apt update && sudo apt list --upgradable && sudo apt full-upgrade && sudo apt autoremove && flatpak update'
 
+alias s-updt='sudo nala upgrade && flatpak update'
+
 # Update python packages
 alias pip-updt='pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U'
 
