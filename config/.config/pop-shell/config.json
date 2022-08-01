@@ -134,6 +134,9 @@
     {
       "class": "Mudlet",
       "title": "Arkadia - Editor"
+    },
+    {
+      "class": "amberol"
     }
   ],
   "skiptaskbarhidden": [],
