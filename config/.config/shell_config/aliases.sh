@@ -35,7 +35,10 @@ alias top="htop"
 alias lsmount='mount |column -t'
 
 # Use neovim for vim if present.
-command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+#command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# Use lvim for vim if present.
+command -v lvim >/dev/null && alias vim="lvim" vimdiff="lvim -d"
 
 # nvim update plugins
 alias nvim-update='nvim +PlugUpgrade +PlugInstall +PlugUpdate + CocUpdate +qa'
