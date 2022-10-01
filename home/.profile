@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -8,9 +10,8 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-
 # make Caps Lock an additional Esc
-test -n "$DISPLAY" && setxkbmap -option caps:escape &>/dev/null
+test -n "$DISPLAY" && setxkbmap -option caps:escape >/dev/null 2>&1
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -37,8 +38,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 
 # Defaults
-export EDITOR="lvim"
 export VISUAL="lvim"
+export EDITOR="$VISUAL"
 export READER="evince"
 export TERM="xterm-256color"
 export BROWSER="brave-browser"
@@ -53,8 +54,7 @@ export NNN_USE_EDITOR=1
 
 
 if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
-    source /usr/share/nnn/quitcd/quitcd.bash_zsh
+    . /usr/share/nnn/quitcd/quitcd.bash_zsh
 fi
 
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
-source "$HOME/.cargo/env"

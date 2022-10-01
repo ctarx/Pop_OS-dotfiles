@@ -1,10 +1,4 @@
-#   _               _
-#  | |__   __ _ ___| |__  _ __ ___
-#  | '_ \ / _` / __| '_ \| '__/ __|
-#  | |_) | (_| \__ \ | | | | | (__
-#  |_.__/ \__,_|___/_| |_|_|  \___|
-#
-
+#!/bin/bash
 
 # If not running interactively, don't do anything
 case $- in
@@ -60,9 +54,9 @@ esac
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Shell config source
 # shellcheck source=~/.config/shell_config/
-for f in ~/.config/shell_config/*; do source "$f"; done
+for f in ~/.config/shell_config/*; do 
+  source "$f"; done
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -74,4 +68,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-source "$HOME/.cargo/env"
