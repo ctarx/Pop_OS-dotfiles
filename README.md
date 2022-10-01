@@ -26,4 +26,4 @@ $ fc-cache -f -v
 I use [Gogh](https://github.com/Mayccoll/Gogh) - brilliant project with many themes including gruvbox
 
 #### Contact
-Created by [@ctarx](ht:wqtps://linuxrocks.online/@ctarx) - feel free to contact me!
+Created by [@ctarx](https://linuxrocks.online/@ctarx) - feel free to contact me!
