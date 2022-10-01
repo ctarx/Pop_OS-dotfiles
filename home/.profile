@@ -38,8 +38,8 @@ export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 
 # Defaults
 export EDITOR="lvim"
-export READER="evince"
 export VISUAL="lvim"
+export READER="evince"
 export TERM="xterm-256color"
 export BROWSER="brave-browser"
 

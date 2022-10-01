@@ -12,10 +12,9 @@ $ cd ~/.dotfiles
 $ stow home && stow config && stow local
 ```
 ## Post Install
-> Neovim settings for python
 
-- python3
-- pip install neovim
+- Nerd Fonts
+- [Starship prompt](https://starship.rs/)
 
 ## Gruvbox colors in gnome-terminal
 
