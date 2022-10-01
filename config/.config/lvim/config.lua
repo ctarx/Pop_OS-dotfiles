@@ -16,7 +16,7 @@ lvim.colorscheme = "gruvbox"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
-lvim.builtin.lualine.options.theme = "default"
+lvim.builtin.lualine.options.theme = "gruvbox"
 lvim.builtin.lualine.style = "default"
 
 vim.opt.backup = false -- creates a backup file
@@ -45,8 +45,8 @@ vim.opt.scrolloff = 8 -- is one of my fav
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
--- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
--- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
