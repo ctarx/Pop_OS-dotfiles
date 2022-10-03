@@ -31,6 +31,8 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# .cargo/bin 
+PATH="$HOME/.cargo/bin:$PATH"
 
 # XDG Base Directory clean up
 export XDG_CONFIG_HOME="$HOME/.config"
