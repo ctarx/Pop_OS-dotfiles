@@ -73,7 +73,7 @@ alias weather='curl wttr.in'
 
 chsheet() {
 # Cheatsheets https://github.com/chubin/cheat.sh
-curl -L 'https://cheat.sh/$1'
+curl -L "https://cheat.sh/$1"
 }
 
 # GIT
