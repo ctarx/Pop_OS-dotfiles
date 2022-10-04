@@ -71,3 +71,4 @@ fi
 
 # fnm
 eval "$(fnm env --use-on-cd)"
+fpath+=~/.config/shell_config/_fnm
