@@ -68,3 +68,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# fnm
+eval "$(fnm env)"
