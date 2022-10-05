@@ -17,8 +17,8 @@ alias \
   cf='cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A' \
   cac='cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -A' \
   cfb='$EDITOR $HOME/.bashrc' \
-  cfa='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shell_config/aliases.sh' \
-  cfs='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shell_config/shortcuts.sh' \
+  cfa='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/aliases.sh' \
+  cfs='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/shortcuts.sh' \
   cfz='$EDITOR $ZDOTDIR/.zshrc' \
   cfv='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim' \
   arko='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json' \

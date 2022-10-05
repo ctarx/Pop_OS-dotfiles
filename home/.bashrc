@@ -39,7 +39,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# Prompt
+# Starship Prompt
 eval "$(starship init bash)"  # starship prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -54,8 +54,8 @@ esac
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# shellcheck source=~/.config/shell_config/
-for f in ~/.config/shell_config/*; do 
+# source configs
+for f in ~/.config/shellcfg/*; do 
   source "$f"; done
 
 # enable programmable completion features (you don't need to enable
@@ -69,6 +69,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# fnm
+# Fast Node Manager (fnm)
 eval "$(fnm env --use-on-cd)"
 fpath+=~/.config/shell_config/_fnm
