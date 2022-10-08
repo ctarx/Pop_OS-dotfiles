@@ -69,7 +69,9 @@ ext() {
 }
 
 alias ipinfo='curl ipinfo.io'
-alias weather='curl wttr.in'
+weather() {
+  curl -s "wttr.in/$1"
+}
 
 chsheet() {
 # Cheatsheets https://github.com/chubin/cheat.sh

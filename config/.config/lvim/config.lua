@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = false
+lvim.format_on_save = true
 lvim.colorscheme = "gruvbox-baby"
 
 -- to disable icons and use a minimalist setup, uncomment the following
