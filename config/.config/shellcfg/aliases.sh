@@ -78,6 +78,11 @@ chsheet() {
 curl -L "https://cheat.sh/$1"
 }
 
+# make dir for zettelkasten using 'isosec' script
+mkzet() {
+  mkdir "$(isosec)"
+}
+
 # GIT
 alias \
         ga='git add' \
