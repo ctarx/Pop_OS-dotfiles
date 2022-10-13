@@ -78,6 +78,11 @@ chsheet() {
 curl -L "https://cheat.sh/$1"
 }
 
+# lynx preview markdown with pandoc
+mview () {
+  pandoc "$1" | lynx -stdin
+}
+
 # make dir for zettelkasten using 'isosec' script
 mkzet() {
   mkdir "$(isosec)"
