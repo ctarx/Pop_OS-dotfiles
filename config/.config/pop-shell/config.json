@@ -140,6 +140,9 @@
     },
     {
       "class": "File-roller"
+    },
+    {
+      "class": "Cider"
     }
   ],
   "skiptaskbarhidden": [],
