@@ -203,6 +203,17 @@ lvim.plugins = {
     --  vim.o.timeoutlen = 500
     -- end
   },
+  { "norcalli/nvim-colorizer.lua",
+  -- Attach to certain Filetypes, add special configuration for `html`
+  -- Use `background` for everything else.
+  require 'colorizer'.setup {
+    'css';
+    'javascript';
+    html = {
+      mode = 'foreground';
+      }
+    }
+  },
 }
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
