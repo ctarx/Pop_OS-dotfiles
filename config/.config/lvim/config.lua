@@ -193,15 +193,13 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  { "ellisonleao/gruvbox.nvim" },
   { "luisiacc/gruvbox-baby" },
   {
     "tpope/vim-surround",
-
     -- make sure to change the value of `timeoutlen` if it's not triggering correctly, see https://github.com/tpope/vim-surround/issues/117
-    -- setup = function()
-    --  vim.o.timeoutlen = 500
-    -- end
+    setup = function()
+      vim.o.timeoutlen = 500
+    end
   },
   {
     "norcalli/nvim-colorizer.lua",
