@@ -41,7 +41,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 
 # Defaults
-export VISUAL="lvim"
+export VISUAL="nvim"
 export EDITOR="$VISUAL"
 export READER="evince"
 export TERM="xterm-256color"
