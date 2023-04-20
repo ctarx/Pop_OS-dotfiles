@@ -20,6 +20,6 @@ alias \
   cfa='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/aliases.sh' \
   cfs='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/shortcuts.sh' \
   cfz='$EDITOR $ZDOTDIR/.zshrc' \
-  cfv='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim' \
+  cfv='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.lua' \
   arko='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json' \
   cfn='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config' \
