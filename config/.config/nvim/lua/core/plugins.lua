@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  'ellisonleao/gruvbox.nvim',
   'luisiacc/gruvbox-baby',
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
