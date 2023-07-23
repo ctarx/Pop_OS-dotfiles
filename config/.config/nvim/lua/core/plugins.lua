@@ -49,6 +49,13 @@ local plugins = {
   {'lukas-reineke/indent-blankline.nvim'},
   {'windwp/nvim-autopairs'},
   {'norcalli/nvim-colorizer.lua'},
+  {
+   'iamcco/markdown-preview.nvim',
+   ft = 'markdown',
+   build = function()
+     vim.fn['mkdp#util#install']()
+   end,
+  },
 }
 
 local opts = {}
