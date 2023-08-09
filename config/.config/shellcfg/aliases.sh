@@ -106,9 +106,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias reload='exec ${SHELL} -l'
 
 # System update
-alias sys-updt='sudo apt update && sudo apt list --upgradable && sudo apt full-upgrade && sudo apt autoremove && flatpak update'
+alias sys-updt='sudo apt update && sudo apt list --upgradable && sudo apt full-upgrade && sudo apt autoremove && flatpak update && flatpak uninstall --unused'
 
-alias s-updt='sudo nala upgrade && flatpak update'
+alias s-updt='sudo nala upgrade && flatpak update && flatpak uninstall --unused'
 
 # Update python packages
 alias pip-updt='pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U'
