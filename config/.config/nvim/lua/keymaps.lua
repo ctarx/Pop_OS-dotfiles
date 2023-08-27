@@ -29,4 +29,3 @@ vim.keymap.set('n', '<C-s>', ':w<CR>')
 vim.keymap.set('n', '<S-l>', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<S-h>', ':BufferLineCyclePrev<CR>')
 vim.keymap.set("n", "<leader>q", ":bdelete<CR>")
-
