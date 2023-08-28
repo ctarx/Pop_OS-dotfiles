@@ -14,11 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 local plugin_list = {
   {
     'numToStr/Comment.nvim',
-      opts = {}
-  },
-
-  {
-    'numToStr/Comment.nvim',
       config = function()
         require("Comment").setup()
       end
@@ -35,7 +30,7 @@ local plugin_list = {
   {
     'akinsho/bufferline.nvim',
       version = "*",
-      dependencies = 'nvim-tree/nvim-web-devicons'
+      dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
   -- LSP
     'williamboman/mason.nvim',
@@ -48,9 +43,9 @@ local plugin_list = {
   {
     'hrsh7th/nvim-cmp',
       dependencies = {
-        'L3MON4D3/LuaSnip',
-        'saadparwaiz1/cmp_luasnip',
-        'rafamadriz/friendly-snippets',
+        'L3MON4D3/LuaSnip', -- snippet engine
+        'saadparwaiz1/cmp_luasnip', -- for autocompletion
+        'rafamadriz/friendly-snippets', -- usefull snippets
             
         'hrsh7th/cmp-nvim-lsp',
             
@@ -64,7 +59,7 @@ local plugin_list = {
 
   {
     'nvim-telescope/telescope.nvim',
-      dependencies = { 'nvim-lua/plenary.nvim' }
+      dependencies = { 'nvim-lua/plenary.nvim' },
   },
 
   {
@@ -74,7 +69,7 @@ local plugin_list = {
 
   {
     'nvim-tree/nvim-tree.lua',
-      dependencies = 'nvim-tree/nvim-web-devicons',
+      dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
 
   {
