@@ -12,9 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugin_list = {
-  { 
-    'numToStr/Comment.nvim', 
-      opts = {} 
+  {
+    'numToStr/Comment.nvim',
+      opts = {}
   },
 
   {
