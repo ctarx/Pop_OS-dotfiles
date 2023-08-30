@@ -86,8 +86,14 @@ local plugin_list = {
   },
 
    'lukas-reineke/indent-blankline.nvim',
-   'windwp/nvim-autopairs',
    'norcalli/nvim-colorizer.lua',
+
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {}
+  },
+
   {
     'iamcco/markdown-preview.nvim',
       ft = 'markdown',
