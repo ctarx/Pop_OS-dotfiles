@@ -40,7 +40,22 @@ cmp.setup {
         end, { 'i', 's' }),
     },
     sources = {
+        { name = 'path' },
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
+    },
+    formatting = {
+    fields = {'menu', 'abbr', 'kind'},
+    format = function(entry, item)
+      local menu_icon = {
+        nvim_lsp = 'λ',
+        luasnip = '⋗',
+        --buffer = 'Ω',
+        path = '🖫',
+      }
+
+      item.menu = menu_icon[entry.source.name]
+      return item
+      end,
     },
 }
