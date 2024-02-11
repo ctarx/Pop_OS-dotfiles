@@ -45,7 +45,7 @@ export VISUAL="nvim"
 export EDITOR="$VISUAL"
 export READER="evince"
 export TERM="xterm-256color"
-export BROWSER="brave-browser"
+export BROWSER="firefox"
 
 
 # nnn config
