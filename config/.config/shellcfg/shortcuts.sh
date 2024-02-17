@@ -15,10 +15,11 @@ alias \
   zt='cd ~/Documents/Technology/Notes/zet && ls -A' \
   ark='cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A' \
   cf='cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A' \
-  cac='cd ${XDG_CONFIG_HOME:-$HOME/.cache} && ls -A' \
+  cac='cd $HOME/.cache && ls -A' \
   cfb='$EDITOR $HOME/.bashrc' \
   cfa='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/aliases.sh' \
   cfs='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/shortcuts.sh' \
+  cfu='$EDITOR $HOME/.mozilla/firefox/1ykd21gg.Betterfox/user.js' \
   cfz='$EDITOR $ZDOTDIR/.zshrc' \
   cfv='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.lua' \
   arko='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json' \
