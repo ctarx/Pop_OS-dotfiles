@@ -1,9 +1,5 @@
 -- nvim/lua/options.lua
 
--- leader key as space
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
 vim.o.backspace = '2'
 vim.o.showcmd = true
 vim.o.laststatus = 2

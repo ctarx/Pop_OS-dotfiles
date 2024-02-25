@@ -1,3 +1,9 @@
+-- nvim/lua/keymaps.lua
+
+-- leader key as space
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 -- Navigate vim panels better 
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>')
@@ -32,3 +38,7 @@ vim.keymap.set("n", "<leader>q", ":bdelete<CR>")
 
 -- Markdown Live Preview
 vim.keymap.set("n", "<leader>p", ":MarkdownPreviewToggle<CR>", { silent = true })
+
+-- Nvim-tree
+vim.keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { silent = true })
+

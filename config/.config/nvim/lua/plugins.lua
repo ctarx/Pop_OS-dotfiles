@@ -11,6 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Set `mapleader` before lazy so your mappings are correct
+vim.g.mapleader = ' '
+
 local plugin_list = {
   {
     'numToStr/Comment.nvim',
