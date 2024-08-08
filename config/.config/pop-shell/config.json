@@ -149,6 +149,9 @@
     },
     {
       "class": "krita"
+    },
+    {
+      "class": "ProtonUp-Qt"
     }
   ],
   "skiptaskbarhidden": [],
