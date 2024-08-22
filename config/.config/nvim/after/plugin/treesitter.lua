@@ -14,7 +14,7 @@ require('nvim-treesitter.configs').setup {
       'yaml',
       'html',
       'css',
-  },
+    },
 
     auto_install = false,
 
