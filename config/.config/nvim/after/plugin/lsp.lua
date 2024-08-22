@@ -26,18 +26,30 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
--- no mason
--- require('lspconfig').lua_ls.setup {
---     on_attach = on_attach,
---     capabilities = capabilities,
---     Lua = {
---       workspace = { checkThirdParty = false },
---       telemetry = { enable = false },
---     },
--- }
 
--- mason
-require("mason").setup()
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+  },
+})
+require("mason-lspconfig").setup({
+  ensure_installed = {
+    "html",
+    "cssls",
+    "lua_ls",
+    "tsserver",
+    "jsonls",
+    "bashls",
+    "vimls",
+    "emmet_ls",
+    "pyright",
+    "tailwindcss"
+  }
+})
 require("mason-lspconfig").setup_handlers({
 
     function(server_name)
@@ -59,23 +71,11 @@ require("mason-lspconfig").setup_handlers({
                       library = vim.api.nvim_get_runtime_file("", true),
                 },
                     telemetry = { enable = false },
-                    -- NOTE: toggle below to ignore Lua_LS's noisy `missing-fields` warnings
+-- NOTE: toggle below to ignore Lua_LS's noisy `missing-fields` warnings
                     diagnostics = { disable = { 'missing-fields' } },
                 },
             }
         }
     end
 
-    -- another example
-    -- ["omnisharp"] = function()
-    --     require('lspconfig').omnisharp.setup {
-    --         filetypes = { "cs", "vb" },
-    --         root_dir = require('lspconfig').util.root_pattern("*.csproj", "*.sln"),
-    --         on_attach = on_attach,
-    --         capabilities = capabilities,
-    --         enable_roslyn_analyzers = true,
-    --         analyze_open_documents_only = true,
-    --         enable_import_completion = true,
-    --     }
-    -- end,
 })
