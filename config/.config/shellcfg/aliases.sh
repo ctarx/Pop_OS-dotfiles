@@ -68,6 +68,9 @@ ext() {
         fi
 }
 
+# Python http server
+alias psrv='python3 -m http.server'
+
 alias ipinfo='curl ipinfo.io'
 weather() {
   curl -s "wttr.in/$1"
