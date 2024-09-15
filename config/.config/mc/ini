@@ -87,7 +87,7 @@ skin=gruvbox256
 
 [Layout]
 output_lines=0
-left_panel_size=29
+left_panel_size=94
 top_panel_size=23
 message_visible=true
 keybar_visible=true
