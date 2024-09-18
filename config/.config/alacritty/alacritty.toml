@@ -1,0 +1,38 @@
+import = ["~/.config/alacritty/gruvbox_dark.toml"]
+
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+# [shell]
+# program = "tmux"
+
+[window]
+padding.x = 16
+padding.y = 14
+decorations = "None"
+opacity = 0.90
+
+[keyboard]
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
+[cursor]
+style = { shape = "Block", blinking = "Always" } 
