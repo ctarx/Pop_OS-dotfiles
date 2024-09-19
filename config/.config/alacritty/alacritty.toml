@@ -35,4 +35,4 @@ family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
 
 [cursor]
-style = { shape = "Block", blinking = "Always" } 
+style = { shape = "Block", blinking = "On" } 
