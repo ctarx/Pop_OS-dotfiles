@@ -10,6 +10,7 @@ alias \
     rm='rm -vI' \
     mkdir='mkdir -pv' \
     ..='cd ../'
+
 alias cpv='rsync -ah --info=progress2' # copy with a progress bar
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
@@ -20,9 +21,10 @@ alias less='less -R'
 alias '?'=duck
 
 alias \
-    ls='lsd --group-dirs first' \
-    ll='lsd -lAh --blocks permission,group,size,date,name  --date relative --group-dirs first' \
-    l='lsd -lh --group-dirs first'
+    ls='eza -lh --group-directories-first --icons' \
+    lsa='ls -a' \
+    lt='eza --tree --level=2 --long --icons --git' \
+    lta='lt -a' \
 
 alias tmux='tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf'
 alias grep='grep -i --color=auto'
@@ -39,10 +41,6 @@ alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 
 # Use neovim for vim if present.
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
-
-# Use lvim for vim if present.
-#command -v lvim >/dev/null && alias vim="lvim" vimdiff="lvim -d"
-
 
 # extract:  Extract most know archives with one command
 # ---------------------------------------------------------
@@ -67,9 +65,6 @@ ext() {
             echo "'$1' is not a valid file"
         fi
 }
-
-# Python http server
-alias psrv='python3 -m http.server'
 
 alias ipinfo='curl ipinfo.io'
 weather() {
