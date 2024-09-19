@@ -92,6 +92,7 @@ alias \
         gd='git diff' \
         gco='git checkout' \
         gs='git status' \
+        gcm='git commit -m' \
         gci='git commit' \
         gl='git pull' \
         gp='git push' \

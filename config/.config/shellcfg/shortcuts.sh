@@ -4,18 +4,18 @@
 
 # Shortcuts
 alias \
-  h='cd ~/ && ls -A' \
-  d='cd ~/Documents && ls -A' \
-  D='cd ~/Downloads && ls -A' \
-  m='cd ~/Music && ls -A' \
-  pp='cd ~/Pictures && ls -A' \
-  vv='cd ~/Videos && ls -A' \
-  dev='cd ~/Projects && ls -A' \
-  dt='cd ~/.dotfiles && ls -A' \
-  zt='cd ~/Documents/Technology/Notes/zet && ls -A' \
-  ark='cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && ls -A' \
-  cf='cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -A' \
-  cac='cd $HOME/.cache && ls -A' \
+  h='cd ~/ && lsa' \
+  d='cd ~/Documents && lsa' \
+  D='cd ~/Downloads && lsa' \
+  m='cd ~/Music && lsa' \
+  pp='cd ~/Pictures && lsa' \
+  vv='cd ~/Videos && lsa' \
+  dev='cd ~/Projects && lsa' \
+  dt='cd ~/.dotfiles && lsa' \
+  zt='cd ~/Documents/Technology/Notes/zet && lsa' \
+  ark='cd ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia && lsa' \
+  cf='cd ${XDG_CONFIG_HOME:-$HOME/.config} && lsa' \
+  cac='cd $HOME/.cache && lsa' \
   cfb='$EDITOR $HOME/.bashrc' \
   cfa='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/aliases.sh' \
   cfs='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/shellcfg/shortcuts.sh' \
@@ -24,4 +24,4 @@ alias \
   cfv='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.lua' \
   arko='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/mudlet/profiles/Arkadia/ozum.json' \
   cfn='$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config' \
-  odn='cd ~/Projects/courses/Odin-Project && ls -A' \
+  odn='cd ~/Projects/courses/Odin-Project && lsa' \
