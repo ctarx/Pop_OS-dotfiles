@@ -2,6 +2,10 @@
 
 > base configuration files
 
+## Screenshot
+
+![screenshot](screenshot.png)
+
 ## Install
 
 Neovim
@@ -49,10 +53,24 @@ fc-cache -f -v
 - [Starship prompt](https://starship.rs/)
 - [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)
 
+## Nerdfetch
+
+```shell
+sudo curl -fsSL https://raw.githubusercontent.com/ThatOneCalculator/NerdFetch/main/nerdfetch -o /usr/bin/nerdfetch
+sudo chmod +x /usr/bin/nerdfetch
+nerdfetch
+```
+
 ## Gruvbox colors in gnome-terminal
 
 I use [Gogh](https://github.com/Mayccoll/Gogh)
 brilliant project with many themes including gruvbox
+
+## Tmux Plugin Manager
+
+```shell
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
 
 ### Contact
 
