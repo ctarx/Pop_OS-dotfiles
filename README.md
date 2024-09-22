@@ -68,6 +68,8 @@ brilliant project with many themes including gruvbox
 
 ## Tmux Plugin Manager
 
+[tpm](https://github.com/tmux-plugins/tpm)
+
 ```shell
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
