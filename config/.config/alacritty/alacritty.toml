@@ -3,7 +3,7 @@ import = ["~/.config/alacritty/gruvbox_dark.toml", "~/.config/alacritty/fonts.to
 live_config_reload = true
 
 [env]
-TERM = "alacritty"
+TERM = "xterm-256color"
 
 # [shell]
 # program = "tmux"
