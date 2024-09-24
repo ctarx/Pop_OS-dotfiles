@@ -1,20 +1,21 @@
 #!/bin/bash
 
+# --- Start with a system info banner ---
 nerdfetch
 
-# If not running interactively, don't do anything
+# --- If not running interactively, don't do anything ---
 case $- in
     *i*) ;;
       *) return;;
 esac
 
-# Activate vi mode with <Esc>
+# --- Activate vi mode with <Esc> ---
 set -o vi
 
-# Completion and listing
-bind 'set show-all-if-ambiguous on'
-bind 'set completion-ignore-case on'
-bind 'TAB:menu-complete'
+# --- Completion and listing ---
+bind 'set show-all-if-ambiguous on'  # - Allow auto-completion even when ambiguous
+bind 'set completion-ignore-case on' # - Ignore case in completion to avoid unnecessary case sensitivity
+bind 'TAB:menu-complete'  # - Use 'menu-complete' to cycle through completions with TAB
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -41,8 +42,10 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# Starship Prompt
-eval "$(starship init bash)"  # starship prompt
+# --- Starship prompt setup ---
+if command -v starship &> /dev/null; then
+    eval "$(starship init bash)"
+fi
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -71,6 +74,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Fast Node Manager (fnm)
-eval "$(fnm env --use-on-cd)"
+# --- Fast Node Manager (fnm) setup ---
+if command -v fnm &> /dev/null; then
+    eval "$(fnm env --use-on-cd)"
+fi
+
+# Optionally add `fpath` if necessary
 fpath+=~/.config/shell_config/_fnm
