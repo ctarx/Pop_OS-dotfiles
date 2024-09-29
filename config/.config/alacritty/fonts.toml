@@ -1,24 +1,32 @@
+## Font configuration ---------------------------------------
+## Font size
 [font]
 size = 14
 
+## Use custom built-in font for box drawing characters na powerline symbols
 builtin_box_drawing = true
 
+## Normal font family
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
+## Bold font family
 [font.bold]
 family = "JetBrainsMono Nerd Font Mono"
 style = "Bold"
 
+## Italic font family
 [font.italic]
 family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
 
+## Space around each character
 [font.offset]
 x = 0
 y = 0
 
+## Glyph offset
 [font.glyph_offset]
 x = 0
 y = 0

@@ -1,24 +1,66 @@
-import = ["~/.config/alacritty/gruvbox_dark.toml", "~/.config/alacritty/fonts.toml"]
+## GENERAL --------------------------------------------------------
 
+## Import additional config files
+import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
+
+## Live config reload
 live_config_reload = true
 
+## ENVIRONMENT ----------------------------------------------------
+
+## Environment variables for any process spawned
 [env]
 TERM = "xterm-256color"
 
 # [shell]
 # program = "tmux"
 
+## WINDOW ---------------------------------------------------------
 [window]
-padding.x = 16
-padding.y = 14
+# padding.x = 16
+# padding.y = 14
 decorations = "None"
 opacity = 0.90
+blur = false
 
+## Padding around the window
+[window.padding]
+x = 12
+y = 10
+
+## SCROLLING ------------------------------------------------------
+[scrolling]
+history = 10000
+multiplier = 3
+
+## BELL -----------------------------------------------------------
+[bell]
+animation = "Linear"
+duration = 20
+command = { program = "paplay", args = ["/usr/share/sounds/freedesktop/stereo/bell.oga"] }
+
+## KEYBOARD ---------------------------------------------------------
 [keyboard]
 [[keyboard.bindings]]
 key = "F11"
 action = "ToggleFullscreen"
 
+## SELECTION ---------------------------------------------------------
+[selection]
+save_to_clipboard = true
 
+## CURSOR ---------------------------------------------------------
 [cursor]
-style = { shape = "Block", blinking = "On" } 
+vi_mode_style = "None"
+blink_interval = 750
+blink_timeout = 5
+unfocused_hollow = false
+thickness = 0.15
+
+[cursor.style]
+shape = "Block"
+blinking = "On"
+
+## MOUSE ----------------------------------------------------------
+[mouse]
+hide_when_typing = false
