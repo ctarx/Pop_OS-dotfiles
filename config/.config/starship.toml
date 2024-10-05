@@ -11,7 +11,7 @@ $character"""
 [username]
 style_user = "bold yellow"
 style_root = "bold green"
-format = "[$user]($style)@"
+format = "[$user]($style)[@](bold red)"
 disabled = false
 show_always = true
 
