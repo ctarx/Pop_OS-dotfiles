@@ -117,13 +117,13 @@
       "class": "Gnome-contacts"
     },
     {
-      "class": "riotclientux.exe"
+      "class": "krita"
     },
     {
       "class": "explorer.exe"
     },
     {
-      "class": "leagueclientux.exe"
+      "class": "ProtonUp-Qt"
     },
     {
       "class": "Imager"
@@ -146,12 +146,6 @@
     },
     {
       "class": "Albion Online Launcher"
-    },
-    {
-      "class": "krita"
-    },
-    {
-      "class": "ProtonUp-Qt"
     }
   ],
   "skiptaskbarhidden": [],
