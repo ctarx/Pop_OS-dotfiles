@@ -146,6 +146,9 @@
     },
     {
       "class": "Albion Online Launcher"
+    },
+    {
+      "class": "winecfg.exe"
     }
   ],
   "skiptaskbarhidden": [],
