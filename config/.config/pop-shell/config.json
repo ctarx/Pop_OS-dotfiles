@@ -149,6 +149,12 @@
     },
     {
       "class": "winecfg.exe"
+    },
+    {
+      "class": "Mailspring"
+    },
+    {
+      "class": "CurseForge"
     }
   ],
   "skiptaskbarhidden": [],
