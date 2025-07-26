@@ -1,6 +1,8 @@
 theme = GruvboxDarkHard
 background-opacity = 0.9
 background-blur = true
+background = #282828
+foreground = #ebdbb2
 window-decoration = none
 window-padding-x = 12
 window-padding-y = 10
