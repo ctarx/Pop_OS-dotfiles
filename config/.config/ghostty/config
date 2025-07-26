@@ -11,5 +11,6 @@ font-size = 14
 cursor-color = #cc241d
 cursor-text = #282828
 cursor-style = block
+cursor-style-blink = true
 shell-integration-features = no-cursor
 mouse-hide-while-typing
