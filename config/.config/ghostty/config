@@ -1,3 +1,11 @@
+# The syntax is "key = value". The whitespace around the
+# equals doesn't matter.
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+# Empty values reset the configuration to the default value
+
 theme = GruvboxDarkHard
 
 background-opacity = 0.9
@@ -23,7 +31,3 @@ mouse-hide-while-typing
 # Keybinds
 keybind = ctrl+shift+r=reload_config
 
-keybind = ctrl+shift+h=new_split:left
-keybind = ctrl+shift+j=new_split:down
-keybind = ctrl+shift+k=new_split:up
-keybind = ctrl+shift+l=new_split:right
