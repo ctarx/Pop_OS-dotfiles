@@ -38,11 +38,11 @@ stow home && stow config && stow local
 
 ## Post Install
 - [Ghostty Terminal](https://github.com/mkasberg/ghostty-ubuntu/releases)
+
 ```shell
 sudo apt install ./ghostty_*.deb
 ```
-```
-```
+
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
 ```shell
