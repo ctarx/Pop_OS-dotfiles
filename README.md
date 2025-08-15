@@ -10,11 +10,7 @@
 
 Neovim
 
-```shell
-sudo add-apt-repository ppa:neovim-ppa/unstable -y
-sudo apt update
-sudo apt install make gcc ripgrep unzip git xclip neovim
-```
+[Install from source](https://github.com/neovim/neovim/blob/master/BUILD.md)
 
 Install NodeJS
 
@@ -35,8 +31,7 @@ I use GNU Stow [https://www.gnu.org/software/stow](https://www.gnu.org/software/
 
 ```shell
 cd $HOME
-git clone --recurse-submodules https://github.com/ctarx/dotfiles.git ~/.dotfiles
-git submodule update --init --recursive
+git clone https://github.com/ctarx/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 stow home && stow config && stow local
 ```
@@ -51,7 +46,6 @@ fc-cache -f -v
 ```
 
 - [Starship prompt](https://starship.rs/)
-- [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)
 
 ## Nerdfetch
 
