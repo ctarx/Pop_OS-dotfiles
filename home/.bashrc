@@ -5,8 +5,8 @@ nerdfetch
 
 # --- If not running interactively, don't do anything ---
 case $- in
-    *i*) ;;
-      *) return;;
+*i*) ;;
+*) return ;;
 esac
 
 # --- Activate vi mode with <Esc> ---
@@ -15,7 +15,7 @@ set -o vi
 # --- Completion and listing ---
 bind 'set show-all-if-ambiguous on'  # - Allow auto-completion even when ambiguous
 bind 'set completion-ignore-case on' # - Ignore case in completion to avoid unnecessary case sensitivity
-bind 'TAB:menu-complete'  # - Use 'menu-complete' to cycle through completions with TAB
+bind 'TAB:menu-complete'             # - Use 'menu-complete' to cycle through completions with TAB
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -43,25 +43,25 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # --- Starship prompt setup ---
-if command -v starship &> /dev/null; then
-    eval "$(starship init bash)"
+if command -v starship &>/dev/null; then
+  eval "$(starship init bash)"
 fi
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
+xterm* | rxvt*)
+  PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+  ;;
+*) ;;
 esac
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # source configs
-for f in ~/.config/shellcfg/*; do 
-  source "$f"; done
+for f in ~/.config/shell/*; do
+  source "$f"
+done
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -75,8 +75,8 @@ if ! shopt -oq posix; then
 fi
 
 # --- Fast Node Manager (fnm) setup ---
-if command -v fnm &> /dev/null; then
-    eval "$(fnm env --use-on-cd)"
+if command -v fnm &>/dev/null; then
+  eval "$(fnm env --use-on-cd)"
 fi
 
 # Optionally add `fpath` if necessary
