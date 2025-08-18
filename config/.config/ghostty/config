@@ -8,25 +8,34 @@
 
 theme = GruvboxDarkHard
 
-background-opacity = 0.9
+# Font configuration
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 14
+adjust-cell-height=7%
+
+# Window settings
+window-padding-x = 14
+window-padding-y = 14
+window-decoration = false
+background-opacity = 0.98
 background-blur = true
 background = #282828
 foreground = #ebdbb2
 
-window-decoration = none
-window-padding-x = 12
-window-padding-y = 10
+# Window behavior
+confirm-close-surface=false
+resize-overlay = never
+mouse-hide-while-typing
 
-font-family = JetBrainsMono Nerd Font Mono
-font-size = 14
-
+# Cursor styling
 cursor-style = block
 cursor-style-blink = true
 cursor-color = #cc241d
 cursor-text = #282828
 shell-integration-features = no-cursor
 
-mouse-hide-while-typing
+# Terminal settings
+term = xterm-256color
 
 # Keybinds
 keybind = ctrl+shift+r=reload_config
