@@ -23,7 +23,7 @@ style = "bold blue"
 
 [directory]
 style = "bold blue"
-truncation_length = 3
+truncation_length = 2
 truncation_symbol = "../"
 read_only_style = "red"
 read_only = " 󰌾"
@@ -38,8 +38,7 @@ truncation_symbol = ""
 commit_hash_length = 4
 
 [character]
-#success_symbol = "[➜](bold cyan) "
-success_symbol = "[❯](bold #8EC07C)[❯](bold #FABD2F)[❯](bold #FB4934)"
+success_symbol = "[➜](bold cyan) "
 error_symbol = "[✗](bold red) "
 
 # Nerd symbols
